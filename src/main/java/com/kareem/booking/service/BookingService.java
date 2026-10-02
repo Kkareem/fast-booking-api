@@ -51,7 +51,7 @@ public class BookingService {
     }
 
     /**
-     * Portfolio: atomic capacity update + idempotency lookup + Redis hot-path + Kafka event.
+     * Portfolio: atomic capacity reservation + idempotency + failure compensation + outbox event.
      */
     public BookingResponse createBookingAfter(BookingRequest request) {
 

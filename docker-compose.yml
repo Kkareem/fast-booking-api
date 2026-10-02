@@ -14,7 +14,7 @@ services:
     ports:
       - "6379:6379"
 
-  Kafka:
+  kafka:
     image: apache/kafka:3.9.0
     container_name: fast-booking-kafka
     ports:
